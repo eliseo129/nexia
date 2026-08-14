@@ -25,6 +25,36 @@
 
 <main>
 <section class="wrap hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1600 620" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <radialGradient id="g1"><stop offset="0%" stop-color="#ff7a1a" stop-opacity=".55"/><stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/></radialGradient>
+        <radialGradient id="g2"><stop offset="0%" stop-color="#ffb020" stop-opacity=".4"/><stop offset="100%" stop-color="#ffb020" stop-opacity="0"/></radialGradient>
+        <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#ff7a1a" stop-opacity="0"/>
+          <stop offset="50%" stop-color="#ffb020" stop-opacity=".8"/>
+          <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+
+      <circle cx="240" cy="180" r="300" fill="url(#g1)"/>
+      <circle cx="1280" cy="420" r="340" fill="url(#g2)"/>
+
+      <g stroke="url(#line)" stroke-width="1" fill="none" opacity=".5">
+        <path d="M120 110 L300 260 L180 470 M300 260 L430 120 L700 220 M300 260 L520 390 L700 220
+                 M520 390 L860 470 M700 220 L980 140 L1150 330 M980 140 L1320 180 L1420 460
+                 M1150 330 L1420 460 M860 470 L1150 330 M430 120 L760 60 L980 140"/>
+      </g>
+
+      <g class="nodes" fill="#ffb020">
+        <circle cx="120" cy="110" r="4"/><circle cx="300" cy="260" r="6"/><circle cx="180" cy="470" r="4"/>
+        <circle cx="430" cy="120" r="5"/><circle cx="520" cy="390" r="4"/><circle cx="700" cy="220" r="7"/>
+        <circle cx="760" cy="60" r="4"/><circle cx="860" cy="470" r="5"/><circle cx="980" cy="140" r="6"/>
+        <circle cx="1150" cy="330" r="7"/><circle cx="1320" cy="180" r="5"/><circle cx="1420" cy="460" r="4"/>
+      </g>
+    </svg>
+  </div>
+
   <div>
     <span class="pill"><i class="dot"></i> Agentes activos 24/7</span>
     <h1>Agentes de IA que atienden, venden y agendan por ti</h1>
@@ -40,43 +70,6 @@
     </div>
   </div>
 
-  <div class="stage">
-  <svg class="ai" viewBox="0 0 420 420" aria-hidden="true">
-    <defs>
-      <radialGradient id="core">
-        <stop offset="0%" stop-color="#fff"/>
-        <stop offset="35%" stop-color="#ffb020"/>
-        <stop offset="100%" stop-color="#ff7a1a"/>
-      </radialGradient>
-      <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0%" stop-color="#ff7a1a" stop-opacity=".9"/>
-        <stop offset="60%" stop-color="#ffb020" stop-opacity=".15"/>
-        <stop offset="100%" stop-color="#ff7a1a" stop-opacity="0"/>
-      </linearGradient>
-      <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
-    </defs>
-
-    <circle cx="210" cy="210" r="120" fill="#ff7a1a" opacity=".18" filter="url(#blur)"/>
-
-    <g class="net" stroke="url(#ring)" fill="none">
-      <path d="M210 60 L330 140 L300 300 L120 300 L90 140 Z" stroke-width="1.2"/>
-      <path d="M210 60 L300 300 M210 60 L120 300 M330 140 L120 300 M90 140 L300 300 M90 140 L330 140" stroke-width=".8" opacity=".55"/>
-      <circle cx="210" cy="210" r="150" stroke-width="1" opacity=".35"/>
-    </g>
-
-    <g class="orbit">
-      <circle cx="210" cy="60" r="7" fill="#ffb020"/>
-      <circle cx="330" cy="140" r="5" fill="#ff7a1a"/>
-      <circle cx="300" cy="300" r="6" fill="#ffb020"/>
-      <circle cx="120" cy="300" r="5" fill="#ff7a1a"/>
-      <circle cx="90" cy="140" r="6" fill="#ffb020"/>
-    </g>
-
-    <circle class="pulse" cx="210" cy="210" r="46" fill="none" stroke="#ff7a1a" stroke-width="1.5"/>
-    <circle cx="210" cy="210" r="34" fill="url(#core)"/>
-    <text x="210" y="218" class="ai-label">IA</text>
-  </svg>
-
   <div class="chat" aria-hidden="true">
     <div class="chat-head">
       <div class="avatar">N</div>
@@ -87,7 +80,6 @@
     <div class="msg in">16:00 está perfecto.</div>
     <div class="msg out">Listo, cita agendada para mañana 16:00. Te envié la confirmación por correo ✅</div>
     <div class="typing"><i></i><i></i><i></i></div>
-  </div>
   </div>
 </section>
 
