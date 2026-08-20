@@ -134,3 +134,25 @@ footer{border-top:1px solid var(--line); padding:32px 0; font-size:.88rem; color
 .foot{display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between; align-items:center}
 .foot a{text-decoration:none}
 .foot a:hover{color:var(--text)}
+
+/* carrusel de marcas */
+.marcas{padding:64px 0; border-block:1px solid var(--line); background:#0b0e18}
+.marcas-tit{text-align:center; font-size:.82rem; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:36px}
+.marquee{overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.marquee-track{display:flex; width:max-content; animation:slide 38s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marcas-lista{display:flex; align-items:center; gap:56px; list-style:none; margin:0; padding:0 28px}
+.marcas-lista li{display:flex; align-items:center; gap:10px; white-space:nowrap;
+  font-size:1.22rem; font-weight:700; letter-spacing:-.02em; color:#7f8aa6;
+  transition:color .2s}
+.marcas-lista li span{color:var(--brand); font-size:1rem; opacity:.7; transition:opacity .2s}
+.marcas-lista li:hover{color:var(--text)}
+.marcas-lista li:hover span{opacity:1}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){
+  .marquee-track{animation:none}
+  .marquee{overflow-x:auto}
+}
